@@ -7,159 +7,222 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo">SK</div>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <header class="site-header">
+    <div class="nav-shell">
+      <nav class="nav">
+        <a href="#top" class="logo">SK</a>
 
-    <div class="hero-grid">
-      <div class="hero-text">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-left">
         <p class="eyebrow">Computer Graphics Graduate • IT Student • Open to Internship</p>
-        <h1>Sofiia Kalugina</h1>
+
+        <h1>
+          Sofiia <br />
+          Kalugina
+        </h1>
+
         <p class="subtitle">
           I combine design, web development, and technical thinking to create clean,
           visually appealing, and user-focused digital work.
         </p>
+
         <p class="hero-description">
-          I graduated from WSB Merito University in Wrocław with a degree in Computer Graphics
-          and I am currently studying IT Systems in Automation at Wrocław University of Science
-          and Technology. My interests include C++, web development, UI design, and practical
-          digital projects.
+          I graduated from WSB Merito University in Wrocław with a Bachelor's degree in
+          Computer Graphics and I am currently studying IT Systems in Automation at
+          Wrocław University of Science and Technology.
         </p>
 
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="#education">My Education</a>
-          <a class="btn btn-secondary" href="mailto:sv.kalugina20@gmail.com">Contact Me</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#education">See Education</a>
+          <a class="btn btn-secondary" href="mailto:sv.kalugina20@gmail.com">Email Me</a>
         </div>
       </div>
 
-      <aside class="hero-side">
-        <div class="mini-card">
-          <p class="mini-label">Location</p>
+      <div class="hero-right">
+        <div class="hero-note">
+          <span class="note-label">Based in</span>
           <p>Wrocław, Poland</p>
         </div>
-        <div class="mini-card">
-          <p class="mini-label">Focus</p>
-          <p>C++ • HTML/CSS • UI Design</p>
-        </div>
-        <div class="mini-card">
-          <p class="mini-label">Status</p>
-          <p>Seeking Internship</p>
-        </div>
-      </aside>
-    </div>
-  </header>
 
-  <main class="container">
-    <section id="about" class="section intro-section">
-      <h2>About Me</h2>
-      <div class="content-line"></div>
-      <p>
-        I am a Computer Graphics graduate and a current IT Systems in Automation student.
-        I enjoy combining visual aesthetics with logic and structure. My goal is to grow
-        in a real working environment, build meaningful projects, and develop both as a
-        developer and as a designer.
-      </p>
-      <p>
-        My background includes web development, object-oriented programming, databases,
-        Linux, digital design, and 2D/3D graphics. I am especially interested in projects
-        where functionality and visual quality matter equally.
-      </p>
+        <div class="hero-note">
+          <span class="note-label">Interested in</span>
+          <p>C++, web development, UI design, practical digital projects</p>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-label">Current focus</span>
+          <p>Building a stronger portfolio for internship opportunities</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-wide">
+      <div class="section-head">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text">
+          <p>
+            I am a Computer Graphics graduate and a current IT Systems in Automation student.
+            My background combines visual design, web development, and technical problem-solving.
+          </p>
+
+          <p>
+            I enjoy creating work that is both aesthetically strong and practically useful.
+            I am especially interested in projects where clean design, logic, and usability
+            matter equally.
+          </p>
+        </div>
+
+        <div class="about-side">
+          <div class="soft-block">
+            <p class="soft-title">Strengths</p>
+            <p>Visual thinking, structured work, learning fast, combining design with code.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="education" class="section">
-      <h2>Education</h2>
-      <div class="content-line"></div>
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
 
-      <div class="education-list">
-        <article class="education-item">
-          <div class="education-top">
-            <h3>Bachelor's Degree in Computer Graphics</h3>
-            <span>2022 – 2025</span>
-          </div>
-          <p class="education-place">WSB Merito University in Wrocław</p>
-          <p>
-            Graduated with a Bachelor's degree in Computer Graphics.
-            Relevant coursework included Object-Oriented Programming,
-            Algorithms and Data Structures, Database Systems, Web Development,
-            Linux System Administration, and 2D/3D Computer Graphics.
-          </p>
-        </article>
-
-        <article class="education-item">
-          <div class="education-top">
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta">2025 – Present</div>
+          <div class="timeline-content">
             <h3>Bachelor's Student in IT Systems in Automation</h3>
-            <span>2025 – Present</span>
+            <p class="place">Wrocław University of Science and Technology</p>
+            <p>
+              Relevant coursework: C++ Programming, Object-Oriented Programming,
+              Fundamentals of Computer Systems.
+            </p>
           </div>
-          <p class="education-place">Wrocław University of Science and Technology</p>
-          <p>
-            Relevant coursework: C++ Programming, Object-Oriented Programming,
-            Fundamentals of Computer Systems.
-          </p>
         </article>
 
-        <article class="education-item">
-          <div class="education-top">
-            <h3>Final Academic Project</h3>
-            <span>2025</span>
+        <article class="timeline-item">
+          <div class="timeline-meta">2022 – 2025</div>
+          <div class="timeline-content">
+            <h3>Bachelor's Degree in Computer Graphics</h3>
+            <p class="place">WSB Merito University in Wrocław</p>
+            <p>
+              Graduated with a Bachelor's degree in Computer Graphics.
+              Relevant coursework included Object-Oriented Programming,
+              Algorithms and Data Structures, Database Systems, Web Development,
+              Linux System Administration, and 2D/3D Computer Graphics.
+            </p>
           </div>
-          <p class="education-place">WSB Merito University in Wrocław</p>
-          <p>
-            “Website design for training and building modeling” — a final project focused on
-            a training platform interface in Figma for desktop and mobile, together with a
-            3D building model in SketchUp.
-          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-meta">2025</div>
+          <div class="timeline-content">
+            <h3>Final Academic Project</h3>
+            <p class="place">WSB Merito University in Wrocław</p>
+            <p>
+              “Website design for training and building modeling” — final project focused on
+              desktop and mobile interface design in Figma and 3D building modeling in SketchUp.
+            </p>
+          </div>
         </article>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="content-line"></div>
+      <div class="section-head">
+        <h2>Skills</h2>
+      </div>
 
-      <div class="skills-wrap">
-        <div class="skill-pill">C++</div>
-        <div class="skill-pill">Python (Basic)</div>
-        <div class="skill-pill">Java (Basic)</div>
-        <div class="skill-pill">SQL</div>
-        <div class="skill-pill">Linux</div>
-        <div class="skill-pill">Git</div>
-        <div class="skill-pill">HTML</div>
-        <div class="skill-pill">CSS</div>
-        <div class="skill-pill">Unity</div>
-        <div class="skill-pill">Figma</div>
-        <div class="skill-pill">SketchUp</div>
-        <div class="skill-pill">3D Graphics</div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <p class="skill-group-title">Programming</p>
+          <div class="skills-wrap">
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">Python (Basic)</span>
+            <span class="skill-pill">Java (Basic)</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-title">Web & Tools</p>
+          <div class="skills-wrap">
+            <span class="skill-pill">HTML</span>
+            <span class="skill-pill">CSS</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">Unity</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-title">Systems & Data</p>
+          <div class="skills-wrap">
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-title">Design</p>
+          <div class="skills-wrap">
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">SketchUp</span>
+            <span class="skill-pill">3D Graphics</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Languages</h2>
-      <div class="content-line"></div>
+      <div class="section-head">
+        <h2>Languages</h2>
+      </div>
 
       <div class="skills-wrap">
-        <div class="skill-pill">Ukrainian — Native</div>
-        <div class="skill-pill">Russian — Native</div>
-        <div class="skill-pill">Polish — Proficient</div>
-        <div class="skill-pill">English — Proficient</div>
+        <span class="skill-pill">Ukrainian — Native</span>
+        <span class="skill-pill">Russian — Native</span>
+        <span class="skill-pill">Polish — Proficient</span>
+        <span class="skill-pill">English — Proficient</span>
       </div>
     </section>
 
     <section id="contact" class="section contact-section">
-      <h2>Contact</h2>
-      <div class="content-line"></div>
+      <div class="section-head">
+        <h2>Contact</h2>
+      </div>
 
-      <div class="contact-list">
-        <p><strong>Email:</strong> <a href="mailto:sv.kalugina20@gmail.com">sv.kalugina20@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+48723633118">+48 723 633 118</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sofiiakalugina" target="_blank">linkedin.com/in/sofiiakalugina</a></p>
-        <p><strong>Location:</strong> Wrocław, Poland</p>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <p class="contact-label">Email</p>
+          <a href="mailto:sv.kalugina20@gmail.com">sv.kalugina20@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+          <p class="contact-label">Phone</p>
+          <a href="tel:+48723633118">+48 723 633 118</a>
+        </div>
+
+        <div class="contact-item">
+          <p class="contact-label">LinkedIn</p>
+          <a href="https://linkedin.com/in/sofiiakalugina" target="_blank">linkedin.com/in/sofiiakalugina</a>
+        </div>
+
+        <div class="contact-item">
+          <p class="contact-label">Location</p>
+          <p>Wrocław, Poland</p>
+        </div>
       </div>
     </section>
   </main>
