@@ -116,7 +116,7 @@ const translations = {
     about_p2:
       "Lubię pracę, która jest jednocześnie estetyczna i praktyczna. Szczególnie interesują mnie projekty, w których liczy się czysty design, dobra struktura i użyteczność.",
     about_p3:
-      "Obecnie szukam stażu, na którym mogę się rozwijać, pracować nad realnymi zadaniami i budować doświadczenie zarówno jako developerka, jak i osoba z wyczuciem designu.",
+      "Obecnie szukam stażu, na którym mogę się rozwijać, pracować nad realnymi zadaniami i budować doświadczenie zarówno jako developerka, jak i osoba z wyczuciem designу.",
     strengths_title: "Mocne strony",
     strength_1: "Myślenie wizualne",
     strength_2: "Uporządkowane podejście do pracy",
@@ -231,19 +231,40 @@ function initLangButtons() {
 function typeHeroName() {
   if (!heroName) return;
 
-  const finalText = "Sofiia<br>Kalugina";
+  const firstLine = "Sofiia";
+  const secondLine = "Kalugina";
+
   heroName.innerHTML = "";
   let i = 0;
+  let j = 0;
 
-  function type() {
-    if (i < finalText.length) {
-      heroName.innerHTML += finalText.charAt(i);
+  const firstSpan = document.createElement("span");
+  const breakEl = document.createElement("br");
+  const secondSpan = document.createElement("span");
+
+  heroName.appendChild(firstSpan);
+  heroName.appendChild(breakEl);
+  heroName.appendChild(secondSpan);
+
+  function typeFirstLine() {
+    if (i < firstLine.length) {
+      firstSpan.textContent += firstLine.charAt(i);
       i++;
-      setTimeout(type, 70);
+      setTimeout(typeFirstLine, 80);
+    } else {
+      setTimeout(typeSecondLine, 120);
     }
   }
 
-  type();
+  function typeSecondLine() {
+    if (j < secondLine.length) {
+      secondSpan.textContent += secondLine.charAt(j);
+      j++;
+      setTimeout(typeSecondLine, 80);
+    }
+  }
+
+  typeFirstLine();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
