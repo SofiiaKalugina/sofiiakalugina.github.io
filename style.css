@@ -174,9 +174,17 @@ main {
 
 h1 {
   font-size: clamp(3.3rem, 8vw, 6.9rem);
-  line-height: 0.94;
+  line-height: 1.05;
   margin-bottom: 22px;
-  background: linear-gradient(135deg, #fff4ef 0%, #ffc27a 45%, #ff8a65 75%, #ff5fa2 100%);
+
+  background: linear-gradient(
+    135deg,
+    #fff4ef 0%,
+    #ffc27a 30%,
+    #ff8a65 60%,
+    #ff5fa2 100%
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -677,3 +685,4 @@ h1 {
 .section {
   padding: 56px 0;
 }
+
