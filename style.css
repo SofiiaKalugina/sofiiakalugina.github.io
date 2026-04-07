@@ -176,6 +176,10 @@ h1 {
   font-size: clamp(3.3rem, 8vw, 6.9rem);
   line-height: 0.94;
   margin-bottom: 22px;
+  background: linear-gradient(135deg, #fff4ef 0%, #ffc27a 45%, #ff8a65 75%, #ff5fa2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .lead {
@@ -610,4 +614,42 @@ h1 {
   .timeline-year {
     font-size: 0.9rem;
   }
+}
+
+.hero-copy,
+.hero-panel {
+  animation: fadeUp 0.9s ease both;
+}
+
+.hero-panel {
+  animation-delay: 0.15s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-card,
+.skill-block,
+.focus-card,
+.contact-item,
+.soft-box {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-card:hover,
+.skill-block:hover,
+.focus-card:hover,
+.contact-item:hover,
+.soft-box:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 194, 122, 0.35);
+  box-shadow: 0 20px 45px rgba(255, 95, 162, 0.10);
 }
