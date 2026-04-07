@@ -7,75 +7,167 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
   <header class="hero">
     <nav class="nav">
       <div class="logo">SK</div>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#languages">Languages</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
 
-    <div class="hero-content">
-      <p class="tag">IT Student • C++ • Web • Design</p>
+    <section class="hero-content">
+      <p class="eyebrow">Computer Graphics Graduate • IT Student • Internship Seeker</p>
       <h1>Sofiia Kalugina</h1>
       <p class="subtitle">
-        Computer Graphics graduate and IT Systems in Automation student,
-        building clean websites and practical coding projects.
+        I build clean, visually appealing websites and practical technical projects.
+        My background combines computer graphics, web development, and programming,
+        with a growing focus on C++, automation systems, and user-oriented design.
       </p>
-      <div class="buttons">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn secondary" href="mailto:sv.kalugina20@gmail.com">Contact Me</a>
+
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#about">About Me</a>
+        <a class="btn btn-secondary" href="mailto:sv.kalugina20@gmail.com">Email Me</a>
       </div>
-    </div>
+
+      <div class="hero-mini">
+        <span>Wrocław, Poland</span>
+        <span>Open to internship</span>
+        <span>C++ • HTML/CSS • Figma</span>
+      </div>
+    </section>
   </header>
 
-  <main>
-    <section id="about" class="section card">
-      <h2>About Me</h2>
+  <main class="container">
+    <section id="about" class="card section">
+      <div class="section-title-wrap">
+        <p class="section-label">01</p>
+        <h2>About Me</h2>
+      </div>
       <p>
-        I am a student based in Wrocław, interested in web development,
-        C++, UI design, and creative digital projects. I enjoy combining
-        technical skills with visual aesthetics.
+        I am currently studying <strong>IT Systems in Automation</strong> at Wrocław University of
+        Science and Technology and previously completed a degree in
+        <strong>Computer Graphics</strong> at WSB Merito University in Wrocław.
+      </p>
+      <p>
+        I enjoy combining technical structure with visual aesthetics. My interests include
+        web development, C++ programming, UI design, and digital creative work. I am looking
+        for opportunities where I can grow as a developer, contribute to real projects,
+        and keep building practical experience.
       </p>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
+    <section id="education" class="section">
+      <div class="section-title-wrap">
+        <p class="section-label">02</p>
+        <h2>Education</h2>
+      </div>
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3>C++ Object-Oriented Application</h3>
+      <div class="timeline">
+        <article class="timeline-card">
+          <div class="timeline-top">
+            <h3>Bachelor's Student in IT Systems in Automation</h3>
+            <span>2025 – Present</span>
+          </div>
+          <p class="place">Wrocław University of Science and Technology • Wrocław, Poland</p>
           <p>
-            A modular C++ project built with object-oriented programming principles
-            and practical problem-solving logic.
+            Relevant coursework: C++ Programming, Object-Oriented Programming,
+            Fundamentals of Computer Systems.
           </p>
         </article>
 
-        <article class="project-card">
-          <h3>Web Interface Design</h3>
+        <article class="timeline-card">
+          <div class="timeline-top">
+            <h3>Bachelor's Degree in Computer Graphics</h3>
+            <span>2022 – 2025</span>
+          </div>
+          <p class="place">WSB Merito University in Wrocław • Wrocław, Poland</p>
           <p>
-            A simple interface designed in Figma and developed with HTML and CSS,
-            focused on layout and visual clarity.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>
-            My personal website hosted on GitHub Pages, created to showcase my
-            projects, skills, and contact information.
+            Relevant coursework: Object-Oriented Programming, Algorithms and Data Structures,
+            Database Systems, Web Development, Linux System Administration, 2D and 3D Computer Graphics.
           </p>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="section card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:sv.kalugina20@gmail.com">sv.kalugina20@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/sofiiakalugina" target="_blank">linkedin.com/in/sofiiakalugina</a></p>
-      <p>Location: Wrocław, Poland</p>
+    <section id="skills" class="section">
+      <div class="section-title-wrap">
+        <p class="section-label">03</p>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>C++ (competent), Python (basic), Java (basic)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Web</h3>
+          <p>HTML, CSS, web applications</p>
+        </div>
+        <div class="skill-card">
+          <h3>Databases</h3>
+          <p>SQL</p>
+        </div>
+        <div class="skill-card">
+          <h3>Systems</h3>
+          <p>Linux</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, Unity, Microsoft Office</p>
+        </div>
+        <div class="skill-card">
+          <h3>Design & Graphics</h3>
+          <p>Figma, SketchUp, 3D Graphics</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages" class="section">
+      <div class="section-title-wrap">
+        <p class="section-label">04</p>
+        <h2>Languages</h2>
+      </div>
+
+      <div class="languages-row">
+        <div class="pill">Ukrainian — Native</div>
+        <div class="pill">Russian — Native</div>
+        <div class="pill">Polish — Proficient</div>
+        <div class="pill">English — Proficient</div>
+      </div>
+    </section>
+
+    <section id="contact" class="card section">
+      <div class="section-title-wrap">
+        <p class="section-label">05</p>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <p class="contact-label">Email</p>
+          <a href="mailto:sv.kalugina20@gmail.com">sv.kalugina20@gmail.com</a>
+        </div>
+        <div>
+          <p class="contact-label">Phone</p>
+          <a href="tel:+48723633118">+48 723 633 118</a>
+        </div>
+        <div>
+          <p class="contact-label">LinkedIn</p>
+          <a href="https://linkedin.com/in/sofiiakalugina" target="_blank">linkedin.com/in/sofiiakalugina</a>
+        </div>
+        <div>
+          <p class="contact-label">Location</p>
+          <p>Wrocław, Poland</p>
+        </div>
+      </div>
     </section>
   </main>
 </body>
