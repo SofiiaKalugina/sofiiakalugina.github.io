@@ -653,3 +653,27 @@ h1 {
   border-color: rgba(255, 194, 122, 0.35);
   box-shadow: 0 20px 45px rgba(255, 95, 162, 0.10);
 }
+
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 194, 122, 0.35),
+    rgba(255, 95, 162, 0.25),
+    transparent
+  );
+}
+
+.section {
+  padding: 56px 0;
+}

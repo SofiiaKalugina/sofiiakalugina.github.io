@@ -271,5 +271,4 @@ window.addEventListener("DOMContentLoaded", () => {
   initLanguage();
   initMenu();
   initLangButtons();
-  typeHeroName();
 });
