@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sofiia Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofiia Kalugina | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">SK</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
 
-  <h1>Sofiia Kalugina</h1>
-  <p>IT Student | C++ | Web</p>
+    <div class="hero-content">
+      <p class="tag">IT Student • C++ • Web • Design</p>
+      <h1>Sofiia Kalugina</h1>
+      <p class="subtitle">
+        Computer Graphics graduate and IT Systems in Automation student,
+        building clean websites and practical coding projects.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn secondary" href="mailto:sv.kalugina20@gmail.com">Contact Me</a>
+      </div>
+    </div>
+  </header>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>My C++ App</li>
-    <li>Web Design Project</li>
-  </ul>
+  <main>
+    <section id="about" class="section card">
+      <h2>About Me</h2>
+      <p>
+        I am a student based in Wrocław, interested in web development,
+        C++, UI design, and creative digital projects. I enjoy combining
+        technical skills with visual aesthetics.
+      </p>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: sv.kalugina20@gmail.com</p>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
 
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>C++ Object-Oriented Application</h3>
+          <p>
+            A modular C++ project built with object-oriented programming principles
+            and practical problem-solving logic.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Web Interface Design</h3>
+          <p>
+            A simple interface designed in Figma and developed with HTML and CSS,
+            focused on layout and visual clarity.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            My personal website hosted on GitHub Pages, created to showcase my
+            projects, skills, and contact information.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sv.kalugina20@gmail.com">sv.kalugina20@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/sofiiakalugina" target="_blank">linkedin.com/in/sofiiakalugina</a></p>
+      <p>Location: Wrocław, Poland</p>
+    </section>
+  </main>
 </body>
 </html>
