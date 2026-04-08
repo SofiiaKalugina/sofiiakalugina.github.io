@@ -626,7 +626,9 @@ h1 {
   }
 }
 
-.hero-copy,
+.hero-copy {
+  overflow: visible;
+}
 .hero-panel {
   animation: fadeUp 0.9s ease both;
 }
