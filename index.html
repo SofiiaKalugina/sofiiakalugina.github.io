@@ -1,18 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sofiia Kalugina | Portfolio</title>
+  <meta name="description" content="Sofiia Kalugina — Computer Science student and aspiring software developer. Explore my projects, technical skills, education, and CV." />
+  <title>Sofiia Kalugina | Software Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script src="js/script.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <div class="nav-wrap">
-      <a href="#top" class="logo">SK</a>
+      <a href="#top" class="logo" aria-label="Back to top">SK</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <button class="menu-toggle" id="menuToggle" type="button"
+              aria-label="Open menu" aria-expanded="false"
+              aria-controls="navLinks">
         ☰
       </button>
 
@@ -20,7 +25,8 @@
         <a href="#about" data-i18n="nav_about">About</a>
         <a href="#education" data-i18n="nav_education">Education</a>
         <a href="#skills" data-i18n="nav_skills">Skills</a>
-        <a href="#focus" data-i18n="nav_focus">Focus</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#focus" data-i18n="nav_focus">More</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
       </nav>
 
@@ -30,13 +36,9 @@
           <button class="lang-btn" data-lang="pl" type="button">PL</button>
         </div>
 
-        <a
-          class="nav-cta"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=sksofiiakalugina@gmail.com&su=Internship%20Opportunity"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-i18n="nav_cta"
-        >
+        <a class="nav-cta"
+           href="mailto:sksofiiakalugina@gmail.com?subject=Internship%20Opportunity"
+           data-i18n="nav_cta">
           Contact
         </a>
       </div>
@@ -44,57 +46,73 @@
   </header>
 
   <main id="top">
+
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="hero_eyebrow">
-          Computer Graphics Graduate • IT Student • Open to Internship
+          Computer Science Student • Aspiring Software Developer
         </p>
 
         <h1>Sofiia<br />Kalugina</h1>
 
         <p class="lead" data-i18n="hero_lead">
-          I combine design, web development, and technical thinking to create clean,
-          visually appealing, and user-focused digital work.
+          I build software and web applications, combining programming,
+          problem-solving, and a background in computer graphics.
         </p>
 
         <p class="hero-text" data-i18n="hero_text">
-          I graduated from WSB Merito University in Wrocław with a Bachelor's degree in
-          Computer Graphics and I am currently studying IT Systems in Automation at
-          Wrocław University of Science and Technology.
+          I study IT Systems in Automation at Wrocław University of Science
+          and Technology, hold a Bachelor's degree in Computer Graphics,
+          and have an English-taught Erasmus+ exchange semester at
+          the University of Twente in the Netherlands.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#education" data-i18n="hero_btn_1">View Education</a>
-          <a
-            class="btn btn-secondary"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=sksofiiakalugina@gmail.com&su=Internship%20Opportunity"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-i18n="hero_btn_2"
-          >
-            Email Me
+          <a class="btn btn-primary" href="#projects"
+             data-i18n="hero_btn_1">
+            View Projects
+          </a>
+
+          <a class="btn btn-secondary"
+             href="Sofiia_Kalugina_CV.pdf"
+             target="_blank" rel="noopener noreferrer"
+             data-i18n="cv_view">
+            View CV
           </a>
         </div>
       </div>
 
       <div class="hero-panel">
         <div class="hero-card">
-          <span class="card-label" data-i18n="card_based_label">Based in</span>
+          <span class="card-label" data-i18n="card_based_label">
+            Based in
+          </span>
           <p data-i18n="card_based_text">Wrocław, Poland</p>
         </div>
 
         <div class="hero-card">
-          <span class="card-label" data-i18n="card_areas_label">Main areas</span>
-          <p data-i18n="card_areas_text">C++ • HTML/CSS • UI Design • Digital Projects</p>
+          <span class="card-label" data-i18n="card_areas_label">
+            Main areas
+          </span>
+          <p data-i18n="card_areas_text">
+            Python • C++ • Web Development • Databases
+          </p>
         </div>
 
         <div class="hero-card">
-          <span class="card-label" data-i18n="card_goal_label">Current goal</span>
-          <p data-i18n="card_goal_text">Build a strong portfolio and gain real internship experience.</p>
+          <span class="card-label" data-i18n="card_goal_label">
+            Current goal
+          </span>
+          <p data-i18n="card_goal_text">
+            Gain practical experience through a software development
+            internship or junior-level opportunity.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section about-section">
       <div class="section-head">
         <p class="section-kicker" data-i18n="about_kicker">About</p>
@@ -104,212 +122,405 @@
       <div class="about-grid">
         <div class="about-main">
           <p data-i18n="about_p1">
-            I am a Computer Graphics graduate and a current IT Systems in Automation student.
-            My background combines visual design, interface thinking, web development,
-            and technical problem-solving.
+            I am a Computer Science student with a background in Computer
+            Graphics. My interests include software development,
+            programming, web technologies, and databases.
           </p>
 
           <p data-i18n="about_p2">
-            I enjoy work that is both aesthetically strong and practically useful.
-            I am especially interested in projects where clean design, structure,
-            and usability matter equally.
+            Through academic and personal projects, I have worked with
+            Python, C++, JavaScript, SQL, and backend technologies.
+            I enjoy building practical applications and understanding
+            how different parts of a system work together.
           </p>
 
           <p data-i18n="about_p3">
-            I am currently looking for an internship where I can grow, contribute to real work,
-            and keep developing both as a developer and as a designer.
+            I am looking for an internship or entry-level position
+            where I can contribute to real software projects,
+            learn from experienced developers, and develop
+            my technical skills.
           </p>
         </div>
 
         <aside class="about-side">
           <div class="soft-box">
-            <p class="soft-title" data-i18n="strengths_title">Strengths</p>
+            <p class="soft-title" data-i18n="strengths_title">
+              Strengths
+            </p>
             <ul>
-              <li data-i18n="strength_1">Visual thinking</li>
-              <li data-i18n="strength_2">Structured work approach</li>
-              <li data-i18n="strength_3">Fast learning</li>
-              <li data-i18n="strength_4">Combining design with code</li>
+              <li data-i18n="strength_1">Problem-solving</li>
+              <li data-i18n="strength_2">Structured thinking</li>
+              <li data-i18n="strength_3">Continuous learning</li>
+              <li data-i18n="strength_4">
+                Combining technical and visual skills
+              </li>
             </ul>
           </div>
         </aside>
       </div>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education" class="section">
       <div class="section-head">
-        <p class="section-kicker" data-i18n="education_kicker">Education</p>
+        <p class="section-kicker" data-i18n="education_kicker">
+          Education
+        </p>
         <h2 data-i18n="education_title">Academic Background</h2>
       </div>
 
       <div class="timeline">
+
         <article class="timeline-item">
-          <div class="timeline-year" data-i18n="edu1_year">2025 – Present</div>
+          <div class="timeline-year" data-i18n="edu1_year">
+            2025 – Present
+          </div>
           <div class="timeline-body">
-            <h3 data-i18n="edu1_title">Bachelor's Student in IT Systems in Automation</h3>
-            <p class="place" data-i18n="edu1_place">Wrocław University of Science and Technology</p>
+            <h3 data-i18n="edu1_title">
+              Bachelor's Degree in IT Systems in Automation
+              (in progress)
+            </h3>
+            <p class="place" data-i18n="edu1_place">
+              Wrocław University of Science and Technology
+            </p>
             <p data-i18n="edu1_text">
-              Relevant coursework: C++ Programming, Object-Oriented Programming,
-              Fundamentals of Computer Systems.
+              Studies focused on programming, computer systems,
+              algorithms, and technical problem-solving.
             </p>
           </div>
         </article>
 
         <article class="timeline-item">
-          <div class="timeline-year" data-i18n="edu2_year">2022 – 2025</div>
+          <div class="timeline-year" data-i18n="edu3_year">
+            09/2026 – 01/2027
+          </div>
           <div class="timeline-body">
-            <h3 data-i18n="edu2_title">Bachelor's Degree in Computer Graphics</h3>
-            <p class="place" data-i18n="edu2_place">WSB Merito University in Wrocław</p>
-            <p data-i18n="edu2_text">
-              Graduated with a Bachelor's degree in Computer Graphics.
-              Relevant coursework included Object-Oriented Programming,
-              Algorithms and Data Structures, Database Systems, Web Development,
-              Linux System Administration, and 2D/3D Computer Graphics.
+            <h3 data-i18n="edu3_title">
+              Erasmus+ Exchange Semester (English-taught)
+            </h3>
+            <p class="place" data-i18n="edu3_place">
+              University of Twente — Enschede, Netherlands
+            </p>
+            <p data-i18n="edu3_text">
+              International academic experience through
+              an English-taught exchange semester.
             </p>
           </div>
         </article>
+
+        <article class="timeline-item">
+          <div class="timeline-year" data-i18n="edu2_year">
+            2022 – 2025
+          </div>
+          <div class="timeline-body">
+            <h3 data-i18n="edu2_title">
+              Bachelor's Degree in Computer Graphics
+            </h3>
+            <p class="place" data-i18n="edu2_place">
+              WSB Merito University in Wrocław
+            </p>
+            <p data-i18n="edu2_text">
+              Relevant coursework included Object-Oriented
+              Programming, Algorithms and Data Structures,
+              Database Systems, Web Development, Linux
+              System Administration, and 2D/3D Computer Graphics.
+            </p>
+          </div>
+        </article>
+
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="section">
       <div class="section-head">
-        <p class="section-kicker" data-i18n="skills_kicker">Skills</p>
-        <h2 data-i18n="skills_title">What I Work With</h2>
+        <p class="section-kicker" data-i18n="skills_kicker">
+          Skills
+        </p>
+        <h2 data-i18n="skills_title">Technical Skills</h2>
       </div>
 
       <div class="skills-grid">
+
         <div class="skill-block">
-          <h3 data-i18n="skill_block_1">Programming</h3>
+          <h3 data-i18n="skill_block_1">Programming Languages</h3>
           <div class="pill-row">
             <span class="pill">C++</span>
-            <span class="pill" data-i18n="skill_python">Python (Basic)</span>
-            <span class="pill" data-i18n="skill_java">Java (Basic)</span>
+            <span class="pill">Python</span>
+            <span class="pill">Java</span>
+            <span class="pill">JavaScript</span>
           </div>
         </div>
 
         <div class="skill-block">
-          <h3 data-i18n="skill_block_2">Web & Tools</h3>
+          <h3 data-i18n="skill_block_2">Web Development</h3>
           <div class="pill-row">
             <span class="pill">HTML</span>
             <span class="pill">CSS</span>
-            <span class="pill">Git</span>
-            <span class="pill">Unity</span>
+            <span class="pill">REST APIs</span>
           </div>
         </div>
 
         <div class="skill-block">
-          <h3 data-i18n="skill_block_3">Systems & Data</h3>
+          <h3 data-i18n="skill_block_3">Databases & Backend</h3>
           <div class="pill-row">
-            <span class="pill">Linux</span>
             <span class="pill">SQL</span>
+            <span class="pill">SQLite</span>
+            <span class="pill">FastAPI</span>
           </div>
         </div>
 
         <div class="skill-block">
-          <h3 data-i18n="skill_block_4">Design</h3>
+          <h3 data-i18n="skill_block_4">Development Tools & Systems</h3>
+          <div class="pill-row">
+            <span class="pill">Git</span>
+            <span class="pill">GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Linux</span>
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">pytest</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3 data-i18n="skill_block_5">
+            Software Development Concepts
+          </h3>
+          <div class="pill-row">
+            <span class="pill">OOP</span>
+            <span class="pill">Data Structures</span>
+            <span class="pill">Algorithms</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3 data-i18n="skill_block_6">Design & Graphics</h3>
           <div class="pill-row">
             <span class="pill">Figma</span>
             <span class="pill">SketchUp</span>
-            <span class="pill">3D Graphics</span>
+            <span class="pill">2D/3D Graphics</span>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <p class="section-kicker" data-i18n="projects_kicker">
+          Projects
+        </p>
+        <h2 data-i18n="projects_title">Selected Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>SysPulse — System Monitoring Platform</h3>
+            <span class="project-type" data-i18n="project1_type">
+              Software Development
+            </span>
+          </div>
+
+          <p class="project-tech">
+            Python • FastAPI • SQLite • JavaScript •
+            pytest • GitHub Actions
+          </p>
+
+          <p data-i18n="project1_text">
+            Developed a system monitoring platform to collect CPU,
+            memory, disk, and network metrics. Built a REST API
+            and web dashboard for performance monitoring,
+            historical data visualization, and alerts.
+            Implemented automated testing and CI workflows.
+          </p>
+
+          <div class="project-actions">
+            <a class="btn btn-secondary"
+               href="https://github.com/SofiiaKalugina/SysPulse"
+               target="_blank"
+               rel="noopener noreferrer"
+               data-i18n="project_source">
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3 data-i18n="project2_title">
+              Personal Portfolio Website
+            </h3>
+            <span class="project-type" data-i18n="project2_type">
+              Web Development
+            </span>
+          </div>
+
+          <p class="project-tech">
+            HTML • CSS • JavaScript
+          </p>
+
+          <p data-i18n="project2_text">
+            Developed a responsive personal portfolio website
+            to showcase technical skills, education, and software
+            development projects, with English and Polish
+            language support.
+          </p>
+
+          <div class="project-actions">
+            <a class="btn btn-secondary"
+               href="https://github.com/SofiiaKalugina/sofiiakalugina.github.io"
+               target="_blank"
+               rel="noopener noreferrer"
+               data-i18n="project_source">
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MORE -->
     <section id="focus" class="section">
       <div class="section-head">
-        <p class="section-kicker" data-i18n="focus_kicker">Focus</p>
+        <p class="section-kicker" data-i18n="focus_kicker">
+          More
+        </p>
         <h2 data-i18n="focus_title">More About Me</h2>
       </div>
 
       <div class="focus-grid">
+
         <div class="focus-card">
-          <h3 data-i18n="focus_card_1_title">Current Focus</h3>
+          <h3 data-i18n="focus_card_1_title">
+            Current Focus
+          </h3>
           <p data-i18n="focus_card_1_text">
-            Strengthening my portfolio, improving practical coding skills, and preparing
-            for internship opportunities in development and digital product work.
+            Improving software development skills through
+            practical projects, backend development, and
+            programming fundamentals.
           </p>
         </div>
 
         <div class="focus-card">
-          <h3 data-i18n="focus_card_2_title">Languages</h3>
+          <h3 data-i18n="focus_card_2_title">
+            Languages
+          </h3>
           <p data-i18n="focus_card_2_text">
-            Ukrainian — Native<br />Russian — Native<br />Polish — Proficient<br />English — Proficient
+            Ukrainian — Native/Bilingual<br />
+            Russian — Native/Bilingual<br />
+            Polish — Proficient<br />
+            English — Fluent
           </p>
         </div>
 
         <div class="focus-card">
-          <h3 data-i18n="focus_card_3_title">Academic Experience</h3>
+          <h3 data-i18n="focus_card_3_title">
+            International Experience
+          </h3>
           <p data-i18n="focus_card_3_text">
-            My studies provided a strong foundation in programming, web development,
-            and digital design, with a focus on practical and structured problem-solving.
+            Erasmus+ academic exchange at the University
+            of Twente in the Netherlands, with courses
+            taught in English.
           </p>
         </div>
 
         <div class="focus-card">
           <h3 data-i18n="focus_card_4_title">CV</h3>
+
           <p data-i18n="focus_card_4_text">
-            You can view my CV to learn more about my background, education, and skills.
+            View or download my CV for more information
+            about my education, technical skills, and projects.
           </p>
 
           <div class="cv-actions">
-            <a class="btn btn-primary" href="Sofiia_Kalugina_CV.pdf" target="_blank">
-             View CV
-               </a>
-            <a class="btn btn-secondary" href="Sofiia_Kalugina_CV.pdf" download data-i18n="cv_download">
+            <a class="btn btn-primary"
+               href="Sofiia_Kalugina_CV.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               data-i18n="cv_view">
+              View CV
+            </a>
+
+            <a class="btn btn-secondary"
+               href="Sofiia_Kalugina_CV.pdf"
+               download="Sofiia_Kalugina_CV.pdf"
+               data-i18n="cv_download">
               Download CV
             </a>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section contact-section">
       <div class="contact-banner">
         <div>
-          <p class="section-kicker" data-i18n="contact_kicker">Contact</p>
-          <h2 data-i18n="contact_title">Let’s Get In Touch</h2>
+          <p class="section-kicker" data-i18n="contact_kicker">
+            Contact
+          </p>
+
+          <h2 data-i18n="contact_title">
+            Let's Get In Touch
+          </h2>
+
           <p class="contact-text" data-i18n="contact_text">
-            I am open to internship opportunities, collaboration, and junior-level work.
+            I am open to software development internships,
+            junior-level opportunities, and collaboration.
           </p>
         </div>
 
-        <a
-          class="btn btn-primary"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=sksofiiakalugina@gmail.com&su=Internship%20Opportunity"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-i18n="contact_btn"
-        >
-          Write Me on Gmail
+        <a class="btn btn-primary"
+           href="mailto:sksofiiakalugina@gmail.com?subject=Internship%20Opportunity"
+           data-i18n="contact_btn">
+          Email Me
         </a>
       </div>
 
       <div class="contact-grid">
-        <div class="contact-item">
-          <p class="contact-label" data-i18n="label_email">Email</p>
-          <a href="mailto:sksofiiakalugina@gmail.com">sksofiiakalugina@gmail.com</a>
-        </div>
 
         <div class="contact-item">
-          <p class="contact-label" data-i18n="label_phone">Phone</p>
-          <a href="tel:+48723633118">+48 723 633 118</a>
+          <p class="contact-label" data-i18n="label_email">
+            Email
+          </p>
+          <a href="mailto:sksofiiakalugina@gmail.com">
+            sksofiiakalugina@gmail.com
+          </a>
         </div>
 
         <div class="contact-item">
           <p class="contact-label">LinkedIn</p>
-          <a href="https://linkedin.com/in/sofiiakalugina" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/sofiiakalugina/"
+             target="_blank" rel="noopener noreferrer">
             linkedin.com/in/sofiiakalugina
           </a>
         </div>
 
         <div class="contact-item">
-          <p class="contact-label" data-i18n="label_location">Location</p>
-          <p data-i18n="location_text">Wrocław, Poland</p>
+          <p class="contact-label">GitHub</p>
+          <a href="https://github.com/SofiiaKalugina"
+             target="_blank" rel="noopener noreferrer">
+            github.com/SofiiaKalugina
+          </a>
         </div>
+
+        <div class="contact-item">
+          <p class="contact-label" data-i18n="label_location">
+            Location
+          </p>
+          <p data-i18n="location_text">
+            Wrocław, Poland
+          </p>
+        </div>
+
       </div>
     </section>
+
   </main>
-
-
 </body>
 </html>
