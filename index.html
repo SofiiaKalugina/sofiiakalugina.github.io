@@ -2,40 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta
-    name="description"
-    content="Sofiia Kalugina — Computer Science student and aspiring software developer. Explore my projects, technical skills, education, and CV."
-  />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sofiia Kalugina — IT student and aspiring software developer. Explore my projects, technical skills, education, and CV.">
   <title>Sofiia Kalugina | Software Developer Portfolio</title>
-
-  <link rel="stylesheet" href="style.css" />
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=4">
+  <script src="js/script.js?v=4" defer></script>
 </head>
 
 <body>
-  <!-- HEADER -->
   <header class="site-header">
     <div class="nav-wrap">
-      <a href="#top" class="logo" aria-label="Back to top">
-        SK
-      </a>
+      <a href="#top" class="logo" aria-label="Back to top">SK</a>
 
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="navLinks"
-      >
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         ☰
       </button>
 
-      <nav class="nav-links" id="navLinks">
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
         <a href="#about" data-i18n="nav_about">About</a>
         <a href="#education" data-i18n="nav_education">Education</a>
         <a href="#skills" data-i18n="nav_skills">Skills</a>
@@ -45,31 +30,13 @@
       </nav>
 
       <div class="header-actions">
-        <div class="lang-switch">
-          <button
-            class="lang-btn active"
-            data-lang="en"
-            type="button"
-          >
-            EN
-          </button>
-
-          <button
-            class="lang-btn"
-            data-lang="pl"
-            type="button"
-          >
-            PL
-          </button>
+        <div class="lang-switch" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" type="button" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="pl" type="button" aria-pressed="false">PL</button>
         </div>
 
-        <a
-          class="nav-cta"
-          href="mailto:sksofiiakalugina@gmail.com?subject=Internship%20Opportunity"
-          data-i18n="nav_cta"
-        >
-          Contact
-        </a>
+        <a class="nav-cta" href="mailto:sksofiiakalugina@gmail.com?subject=Internship%20Opportunity"
+          data-i18n="nav_cta">Contact</a>
       </div>
     </div>
   </header>
@@ -80,41 +47,30 @@
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="hero_eyebrow">
-          Computer Science Student • Aspiring Software Developer
+          IT Student • Aspiring Software Developer
         </p>
 
-        <h1>Sofiia<br />Kalugina</h1>
+        <h1>Sofiia<br>Kalugina</h1>
 
         <p class="lead" data-i18n="hero_lead">
-          I build software and web applications, combining
-          programming, problem-solving, and a background
-          in computer graphics.
+          I develop software and web applications, combining programming and
+          problem-solving skills with a background in computer graphics.
         </p>
 
         <p class="hero-text" data-i18n="hero_text">
-          I study IT Systems in Automation at Wrocław University
-          of Science and Technology and hold a Bachelor's degree
-          in Computer Graphics. My academic experience also
-          includes an English-taught Erasmus+ exchange semester
+          I am studying IT Systems in Automation at Wrocław University of Science
+          and Technology and hold a bachelor's degree in Computer Graphics.
+          I am currently participating in an English-taught Erasmus+ exchange
           at the University of Twente in the Netherlands.
         </p>
 
         <div class="hero-actions">
-          <a
-            class="btn btn-primary"
-            href="#projects"
-            data-i18n="hero_btn_1"
-          >
+          <a class="btn btn-primary" href="#projects" data-i18n="hero_btn_1">
             View Projects
           </a>
 
-          <a
-            class="btn btn-secondary"
-            href="Sofiia_Kalugina_CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-i18n="cv_view"
-          >
+          <a class="btn btn-secondary" href="Sofiia_Kalugina_CV.pdf"
+            target="_blank" rel="noopener noreferrer" data-i18n="cv_view">
             View CV
           </a>
         </div>
@@ -122,42 +78,22 @@
 
       <div class="hero-panel">
         <div class="hero-card">
-          <span
-            class="card-label"
-            data-i18n="card_based_label"
-          >
-            Based in
-          </span>
-
-          <p data-i18n="card_based_text">
-            Wrocław, Poland
-          </p>
+          <span class="card-label" data-i18n="card_based_label">Based in</span>
+          <p data-i18n="card_based_text">Wrocław, Poland</p>
         </div>
 
         <div class="hero-card">
-          <span
-            class="card-label"
-            data-i18n="card_areas_label"
-          >
-            Main Areas
-          </span>
-
+          <span class="card-label" data-i18n="card_areas_label">Main Areas</span>
           <p data-i18n="card_areas_text">
             Python • C++ • Web Development • Databases
           </p>
         </div>
 
         <div class="hero-card">
-          <span
-            class="card-label"
-            data-i18n="card_goal_label"
-          >
-            Current Goal
-          </span>
-
+          <span class="card-label" data-i18n="card_goal_label">Career Goal</span>
           <p data-i18n="card_goal_text">
-            Gain practical experience through a software
-            development internship or an entry-level position.
+            To gain hands-on experience through a software development
+            internship or an entry-level role.
           </p>
         </div>
       </div>
@@ -166,68 +102,40 @@
     <!-- ABOUT -->
     <section id="about" class="section about-section">
       <div class="section-head">
-        <p
-          class="section-kicker"
-          data-i18n="about_kicker"
-        >
-          About
-        </p>
-
-        <h2 data-i18n="about_title">
-          About Me
-        </h2>
+        <p class="section-kicker" data-i18n="about_kicker">About</p>
+        <h2 data-i18n="about_title">About Me</h2>
       </div>
 
       <div class="about-grid">
         <div class="about-main">
           <p data-i18n="about_p1">
-            I am a Computer Science student with a background
-            in Computer Graphics. My interests include software
-            development, programming, web technologies,
-            and databases.
+            I am an IT student with a degree in Computer Graphics.
+            I am interested in software development, programming,
+            web technologies, and databases.
           </p>
 
           <p data-i18n="about_p2">
-            Through academic and personal projects, I have
-            gained experience with Python, C++, JavaScript,
-            SQL, and backend technologies. I enjoy building
-            practical applications and understanding how
-            different parts of a system work together.
+            Through university coursework and personal projects, I have
+            gained experience with Python, C++, JavaScript, SQL, and
+            backend development. I enjoy building useful applications
+            and learning how different parts of a system work together.
           </p>
 
           <p data-i18n="about_p3">
-            I am looking for an internship or entry-level
-            position where I can contribute to real software
-            projects, learn from experienced developers,
-            and further develop my technical skills.
+            I am seeking an internship or entry-level role where I can
+            contribute to software projects, learn from experienced
+            developers, and strengthen my technical skills.
           </p>
         </div>
 
         <aside class="about-side">
           <div class="soft-box">
-            <p
-              class="soft-title"
-              data-i18n="strengths_title"
-            >
-              Strengths
-            </p>
-
+            <p class="soft-title" data-i18n="strengths_title">Strengths</p>
             <ul>
-              <li data-i18n="strength_1">
-                Problem-solving
-              </li>
-
-              <li data-i18n="strength_2">
-                Structured thinking
-              </li>
-
-              <li data-i18n="strength_3">
-                Continuous learning
-              </li>
-
-              <li data-i18n="strength_4">
-                Combining technical and visual skills
-              </li>
+              <li data-i18n="strength_1">Problem-solving</li>
+              <li data-i18n="strength_2">Structured thinking</li>
+              <li data-i18n="strength_3">Continuous learning</li>
+              <li data-i18n="strength_4">Combining technical and design skills</li>
             </ul>
           </div>
         </aside>
@@ -237,133 +145,78 @@
     <!-- EDUCATION -->
     <section id="education" class="section">
       <div class="section-head">
-        <p
-          class="section-kicker"
-          data-i18n="education_kicker"
-        >
-          Education
-        </p>
-
-        <h2 data-i18n="education_title">
-          Academic Background
-        </h2>
+        <p class="section-kicker" data-i18n="education_kicker">Education</p>
+        <h2 data-i18n="education_title">Academic Background</h2>
       </div>
 
       <div class="timeline">
-
-        <!-- WROCŁAW UNIVERSITY -->
         <article class="timeline-item">
-          <div
-            class="timeline-year"
-            data-i18n="edu1_year"
-          >
+          <div class="timeline-year" data-i18n="edu1_year">
             2025 – Present
           </div>
-
           <div class="timeline-body">
             <h3 data-i18n="edu1_title">
-              Bachelor's Studies in IT Systems in Automation
-              (in progress)
+              Bachelor's Studies in IT Systems in Automation (in progress)
             </h3>
-
-            <p
-              class="place"
-              data-i18n="edu1_place"
-            >
+            <p class="place" data-i18n="edu1_place">
               Wrocław University of Science and Technology
             </p>
-
             <p data-i18n="edu1_text">
-              Studies focused on programming, computer
-              systems, algorithms, and technical
-              problem-solving.
+              My studies cover programming, computer systems, algorithms,
+              and technical problem-solving.
             </p>
           </div>
         </article>
 
-        <!-- ERASMUS -->
         <article class="timeline-item">
-          <div
-            class="timeline-year"
-            data-i18n="edu3_year"
-          >
+          <div class="timeline-year" data-i18n="edu3_year">
             09/2026 – 01/2027
           </div>
-
           <div class="timeline-body">
             <h3 data-i18n="edu3_title">
               Erasmus+ Exchange Semester (English-taught)
             </h3>
-
-            <p
-              class="place"
-              data-i18n="edu3_place"
-            >
+            <p class="place" data-i18n="edu3_place">
               University of Twente — Enschede, Netherlands
             </p>
-
             <p data-i18n="edu3_text">
-              An international academic exchange experience
-              with courses taught in English.
+              Currently studying at the University of Twente as an Erasmus+
+              exchange student, taking courses taught in English.
             </p>
           </div>
         </article>
 
-        <!-- WSB MERITO -->
         <article class="timeline-item">
-          <div
-            class="timeline-year"
-            data-i18n="edu2_year"
-          >
+          <div class="timeline-year" data-i18n="edu2_year">
             2022 – 2025
           </div>
-
           <div class="timeline-body">
             <h3 data-i18n="edu2_title">
               Bachelor's Degree in Computer Graphics
             </h3>
-
-            <p
-              class="place"
-              data-i18n="edu2_place"
-            >
+            <p class="place" data-i18n="edu2_place">
               WSB Merito University in Wrocław
             </p>
-
             <p data-i18n="edu2_text">
-              Relevant coursework included Object-Oriented
-              Programming, Algorithms and Data Structures,
-              Database Systems, Web Development, Linux
-              System Administration, and 2D/3D Computer Graphics.
+              Relevant coursework: object-oriented programming, algorithms
+              and data structures, database systems, web development,
+              Linux system administration, and 2D/3D computer graphics.
             </p>
           </div>
         </article>
-
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
       <div class="section-head">
-        <p
-          class="section-kicker"
-          data-i18n="skills_kicker"
-        >
-          Skills
-        </p>
-
-        <h2 data-i18n="skills_title">
-          Technical Skills
-        </h2>
+        <p class="section-kicker" data-i18n="skills_kicker">Skills</p>
+        <h2 data-i18n="skills_title">Technical Skills</h2>
       </div>
 
       <div class="skills-grid">
-
         <div class="skill-block">
-          <h3 data-i18n="skill_block_1">
-            Programming Languages
-          </h3>
-
+          <h3 data-i18n="skill_block_1">Programming Languages</h3>
           <div class="pill-row">
             <span class="pill">C++</span>
             <span class="pill">Python</span>
@@ -373,10 +226,7 @@
         </div>
 
         <div class="skill-block">
-          <h3 data-i18n="skill_block_2">
-            Web Development
-          </h3>
-
+          <h3 data-i18n="skill_block_2">Web Development</h3>
           <div class="pill-row">
             <span class="pill">HTML</span>
             <span class="pill">CSS</span>
@@ -385,10 +235,7 @@
         </div>
 
         <div class="skill-block">
-          <h3 data-i18n="skill_block_3">
-            Databases & Backend
-          </h3>
-
+          <h3 data-i18n="skill_block_3">Databases &amp; Backend</h3>
           <div class="pill-row">
             <span class="pill">SQL</span>
             <span class="pill">SQLite</span>
@@ -397,10 +244,7 @@
         </div>
 
         <div class="skill-block">
-          <h3 data-i18n="skill_block_4">
-            Development Tools & Systems
-          </h3>
-
+          <h3 data-i18n="skill_block_4">Development Tools &amp; Systems</h3>
           <div class="pill-row">
             <span class="pill">Git</span>
             <span class="pill">GitHub</span>
@@ -412,10 +256,7 @@
         </div>
 
         <div class="skill-block">
-          <h3 data-i18n="skill_block_5">
-            Software Development Concepts
-          </h3>
-
+          <h3 data-i18n="skill_block_5">Software Development Concepts</h3>
           <div class="pill-row">
             <span class="pill">OOP</span>
             <span class="pill">Data Structures</span>
@@ -424,208 +265,137 @@
         </div>
 
         <div class="skill-block">
-          <h3 data-i18n="skill_block_6">
-            Design & Graphics
-          </h3>
-
+          <h3 data-i18n="skill_block_6">Design &amp; Graphics</h3>
           <div class="pill-row">
             <span class="pill">Figma</span>
             <span class="pill">SketchUp</span>
             <span class="pill">2D/3D Graphics</span>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section-head">
-        <p
-          class="section-kicker"
-          data-i18n="projects_kicker"
-        >
-          Projects
-        </p>
-
-        <h2 data-i18n="projects_title">
-          Selected Projects
-        </h2>
+        <p class="section-kicker" data-i18n="projects_kicker">Projects</p>
+        <h2 data-i18n="projects_title">Selected Projects</h2>
       </div>
 
       <div class="projects-grid">
-
-        <!-- SYSPULSE -->
         <article class="project-card">
           <div class="project-top">
-            <h3>
-              SysPulse — System Monitoring Platform
-            </h3>
-
-            <span
-              class="project-type"
-              data-i18n="project1_type"
-            >
+            <h3>SysPulse — System Monitoring Platform</h3>
+            <span class="project-type" data-i18n="project1_type">
               Software Development
             </span>
           </div>
 
           <p class="project-tech">
-            Python • FastAPI • SQLite • JavaScript •
-            pytest • GitHub Actions
+            Python • FastAPI • SQLite • JavaScript • pytest • GitHub Actions
           </p>
 
           <p data-i18n="project1_text">
-            Developed a system monitoring platform that
-            collects CPU, memory, disk, and network metrics.
-            Built a REST API and web dashboard for
-            performance monitoring, historical data
-            visualization, and alerts. Implemented
-            automated tests and CI workflows.
+            Developed a system monitoring platform that collects CPU,
+            memory, disk, and network metrics. Built a REST API and a
+            web dashboard to monitor performance, visualize historical
+            data, and display alerts. Added automated tests and
+            continuous integration workflows.
           </p>
 
           <div class="project-actions">
-            <a
-              class="btn btn-secondary"
+            <a class="btn btn-secondary"
               href="https://github.com/SofiiaKalugina/SysPulse"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n="project_source"
-            >
+              target="_blank" rel="noopener noreferrer"
+              data-i18n="project_source">
               View on GitHub
             </a>
           </div>
         </article>
 
-        <!-- PORTFOLIO -->
         <article class="project-card">
           <div class="project-top">
             <h3 data-i18n="project2_title">
               Personal Portfolio Website
             </h3>
-
-            <span
-              class="project-type"
-              data-i18n="project2_type"
-            >
+            <span class="project-type" data-i18n="project2_type">
               Web Development
             </span>
           </div>
 
-          <p class="project-tech">
-            HTML • CSS • JavaScript
-          </p>
+          <p class="project-tech">HTML • CSS • JavaScript</p>
 
           <p data-i18n="project2_text">
-            Developed a responsive personal portfolio
-            website to showcase technical skills,
-            education, and software development projects,
-            with support for English and Polish.
+            Built a responsive personal portfolio website to showcase
+            my technical skills, education, and software projects.
+            The website is available in English and Polish.
           </p>
 
           <div class="project-actions">
-            <a
-              class="btn btn-secondary"
+            <a class="btn btn-secondary"
               href="https://github.com/SofiiaKalugina/sofiiakalugina.github.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n="project_source"
-            >
+              target="_blank" rel="noopener noreferrer"
+              data-i18n="project_source">
               View on GitHub
             </a>
           </div>
         </article>
-
       </div>
     </section>
 
     <!-- MORE -->
     <section id="focus" class="section">
       <div class="section-head">
-        <p
-          class="section-kicker"
-          data-i18n="focus_kicker"
-        >
-          More
-        </p>
-
-        <h2 data-i18n="focus_title">
-          More About Me
-        </h2>
+        <p class="section-kicker" data-i18n="focus_kicker">More</p>
+        <h2 data-i18n="focus_title">More About Me</h2>
       </div>
 
       <div class="focus-grid">
-
         <div class="focus-card">
-          <h3 data-i18n="focus_card_1_title">
-            Current Focus
-          </h3>
-
+          <h3 data-i18n="focus_card_1_title">Current Focus</h3>
           <p data-i18n="focus_card_1_text">
-            Improving my software development skills
-            through practical projects, backend
-            development, and programming fundamentals.
+            Developing my programming skills through practical projects,
+            backend development, and continued study of software
+            engineering fundamentals.
           </p>
         </div>
 
         <div class="focus-card">
-          <h3 data-i18n="focus_card_2_title">
-            Languages
-          </h3>
-
+          <h3 data-i18n="focus_card_2_title">Languages</h3>
           <p data-i18n="focus_card_2_text">
-            Ukrainian — Native/Bilingual<br />
-            Russian — Native/Bilingual<br />
-            Polish — Proficient<br />
-            English — Fluent
+            Ukrainian — Native<br>
+            Russian — Native<br>
+            Polish — Proficient<br>
+            English — Proficient
           </p>
         </div>
 
         <div class="focus-card">
-          <h3 data-i18n="focus_card_3_title">
-            International Experience
-          </h3>
-
+          <h3 data-i18n="focus_card_3_title">International Experience</h3>
           <p data-i18n="focus_card_3_text">
-            Erasmus+ academic exchange at the University
-            of Twente in the Netherlands, with courses
-            taught in English.
+            Currently participating in the Erasmus+ exchange programme
+            at the University of Twente in the Netherlands, where my
+            courses are taught in English.
           </p>
         </div>
 
         <div class="focus-card">
-          <h3 data-i18n="focus_card_4_title">
-            CV
-          </h3>
-
+          <h3 data-i18n="focus_card_4_title">CV</h3>
           <p data-i18n="focus_card_4_text">
-            View or download my CV for more information
-            about my education, technical skills,
-            and projects.
+            View or download my CV for more information about my
+            education, technical skills, and projects.
           </p>
 
           <div class="cv-actions">
-            <a
-              class="btn btn-primary"
-              href="Sofiia_Kalugina_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n="cv_view"
-            >
-              View CV
-            </a>
+            <a class="btn btn-primary" href="Sofiia_Kalugina_CV.pdf"
+              target="_blank" rel="noopener noreferrer"
+              data-i18n="cv_view">View CV</a>
 
-            <a
-              class="btn btn-secondary"
-              href="Sofiia_Kalugina_CV.pdf"
+            <a class="btn btn-secondary" href="Sofiia_Kalugina_CV.pdf"
               download="Sofiia_Kalugina_CV.pdf"
-              data-i18n="cv_download"
-            >
-              Download CV
-            </a>
+              data-i18n="cv_download">Download CV</a>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -633,92 +403,47 @@
     <section id="contact" class="section contact-section">
       <div class="contact-banner">
         <div>
-          <p
-            class="section-kicker"
-            data-i18n="contact_kicker"
-          >
-            Contact
-          </p>
-
-          <h2 data-i18n="contact_title">
-            Let's Get in Touch
-          </h2>
-
-          <p
-            class="contact-text"
-            data-i18n="contact_text"
-          >
-            I am open to software development internships,
-            entry-level positions, and collaboration
-            opportunities.
+          <p class="section-kicker" data-i18n="contact_kicker">Contact</p>
+          <h2 data-i18n="contact_title">Let's Get in Touch</h2>
+          <p class="contact-text" data-i18n="contact_text">
+            I am interested in software development internships,
+            entry-level roles, and opportunities to collaborate.
           </p>
         </div>
 
-        <a
-          class="btn btn-primary"
+        <a class="btn btn-primary"
           href="mailto:sksofiiakalugina@gmail.com?subject=Internship%20Opportunity"
-          data-i18n="contact_btn"
-        >
-          Email Me
-        </a>
+          data-i18n="contact_btn">Email Me</a>
       </div>
 
       <div class="contact-grid">
-
         <div class="contact-item">
-          <p
-            class="contact-label"
-            data-i18n="label_email"
-          >
-            Email
-          </p>
-
+          <p class="contact-label" data-i18n="label_email">Email</p>
           <a href="mailto:sksofiiakalugina@gmail.com">
             sksofiiakalugina@gmail.com
           </a>
         </div>
 
         <div class="contact-item">
-          <p class="contact-label">
-            LinkedIn
-          </p>
-
-          <a
-            href="https://www.linkedin.com/in/sofiiakalugina/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <p class="contact-label">LinkedIn</p>
+          <a href="https://www.linkedin.com/in/sofiiakalugina/"
+            target="_blank" rel="noopener noreferrer">
             linkedin.com/in/sofiiakalugina
           </a>
         </div>
 
         <div class="contact-item">
-          <p class="contact-label">
-            GitHub
-          </p>
-
-          <a
-            href="https://github.com/SofiiaKalugina"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <p class="contact-label">GitHub</p>
+          <a href="https://github.com/SofiiaKalugina"
+            target="_blank" rel="noopener noreferrer">
             github.com/SofiiaKalugina
           </a>
         </div>
 
         <div class="contact-item">
-          <p
-            class="contact-label"
-            data-i18n="label_location"
-          >
-            Location
-          </p>
-
-          <p data-i18n="location_text">
-            Wrocław, Poland
-          </p>
+          <p class="contact-label" data-i18n="label_location">Location</p>
+          <p data-i18n="location_text">Wrocław, Poland</p>
         </div>
-
       </div>
     </section>
 

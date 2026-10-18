@@ -1,6 +1,9 @@
 
 const translations = {
   en: {
+    menu_open: "Open menu",
+    menu_close: "Close menu",
+
     // NAVIGATION
     nav_about: "About",
     nav_education: "Education",
@@ -11,47 +14,40 @@ const translations = {
     nav_cta: "Contact",
 
     // HERO
-    hero_eyebrow:
-      "Computer Science Student • Aspiring Software Developer",
+    hero_eyebrow: "IT Student • Aspiring Software Developer",
 
     hero_lead:
-      "I build software and web applications, combining programming, problem-solving, and a background in computer graphics.",
+      "I develop software and web applications, combining programming and problem-solving skills with a background in computer graphics.",
 
     hero_text:
-      "I study IT Systems in Automation at Wrocław University of Science and Technology and hold a Bachelor's degree in Computer Graphics. My academic experience also includes an English-taught Erasmus+ exchange semester at the University of Twente in the Netherlands.",
+      "I am studying IT Systems in Automation at Wrocław University of Science and Technology and hold a bachelor's degree in Computer Graphics. I am currently participating in an English-taught Erasmus+ exchange at the University of Twente in the Netherlands.",
 
     hero_btn_1: "View Projects",
 
     // HERO CARDS
     card_based_label: "Based in",
     card_based_text: "Wrocław, Poland",
-
     card_areas_label: "Main Areas",
-    card_areas_text:
-      "Python • C++ • Web Development • Databases",
-
-    card_goal_label: "Current Goal",
+    card_areas_text: "Python • C++ • Web Development • Databases",
+    card_goal_label: "Career Goal",
     card_goal_text:
-      "Gain practical experience through a software development internship or an entry-level position.",
+      "To gain hands-on experience through a software development internship or an entry-level role.",
 
     // ABOUT
     about_kicker: "About",
     about_title: "About Me",
-
     about_p1:
-      "I am a Computer Science student with a background in Computer Graphics. My interests include software development, programming, web technologies, and databases.",
-
+      "I am an IT student with a degree in Computer Graphics. I am interested in software development, programming, web technologies, and databases.",
     about_p2:
-      "Through academic and personal projects, I have gained experience with Python, C++, JavaScript, SQL, and backend technologies. I enjoy building practical applications and understanding how different parts of a system work together.",
-
+      "Through university coursework and personal projects, I have gained experience with Python, C++, JavaScript, SQL, and backend development. I enjoy building useful applications and learning how different parts of a system work together.",
     about_p3:
-      "I am looking for an internship or entry-level position where I can contribute to real software projects, learn from experienced developers, and further develop my technical skills.",
+      "I am seeking an internship or entry-level role where I can contribute to software projects, learn from experienced developers, and strengthen my technical skills.",
 
     strengths_title: "Strengths",
     strength_1: "Problem-solving",
     strength_2: "Structured thinking",
     strength_3: "Continuous learning",
-    strength_4: "Combining technical and visual skills",
+    strength_4: "Combining technical and design skills",
 
     // EDUCATION
     education_kicker: "Education",
@@ -60,31 +56,25 @@ const translations = {
     edu1_year: "2025 – Present",
     edu1_title:
       "Bachelor's Studies in IT Systems in Automation (in progress)",
-    edu1_place:
-      "Wrocław University of Science and Technology",
+    edu1_place: "Wrocław University of Science and Technology",
     edu1_text:
-      "Studies focused on programming, computer systems, algorithms, and technical problem-solving.",
+      "My studies cover programming, computer systems, algorithms, and technical problem-solving.",
 
     edu3_year: "09/2026 – 01/2027",
-    edu3_title:
-      "Erasmus+ Exchange Semester (English-taught)",
-    edu3_place:
-      "University of Twente — Enschede, Netherlands",
+    edu3_title: "Erasmus+ Exchange Semester (English-taught)",
+    edu3_place: "University of Twente — Enschede, Netherlands",
     edu3_text:
-      "An international academic exchange experience with courses taught in English.",
+      "Currently studying at the University of Twente as an Erasmus+ exchange student, taking courses taught in English.",
 
     edu2_year: "2022 – 2025",
-    edu2_title:
-      "Bachelor's Degree in Computer Graphics",
-    edu2_place:
-      "WSB Merito University in Wrocław",
+    edu2_title: "Bachelor's Degree in Computer Graphics",
+    edu2_place: "WSB Merito University in Wrocław",
     edu2_text:
-      "Relevant coursework included Object-Oriented Programming, Algorithms and Data Structures, Database Systems, Web Development, Linux System Administration, and 2D/3D Computer Graphics.",
+      "Relevant coursework: object-oriented programming, algorithms and data structures, database systems, web development, Linux system administration, and 2D/3D computer graphics.",
 
     // SKILLS
     skills_kicker: "Skills",
     skills_title: "Technical Skills",
-
     skill_block_1: "Programming Languages",
     skill_block_2: "Web Development",
     skill_block_3: "Databases & Backend",
@@ -98,12 +88,12 @@ const translations = {
 
     project1_type: "Software Development",
     project1_text:
-      "Developed a system monitoring platform that collects CPU, memory, disk, and network metrics. Built a REST API and web dashboard for performance monitoring, historical data visualization, and alerts. Implemented automated tests and CI workflows.",
+      "Developed a system monitoring platform that collects CPU, memory, disk, and network metrics. Built a REST API and a web dashboard to monitor performance, visualize historical data, and display alerts. Added automated tests and continuous integration workflows.",
 
     project2_title: "Personal Portfolio Website",
     project2_type: "Web Development",
     project2_text:
-      "Developed a responsive personal portfolio website to showcase technical skills, education, and software development projects, with support for English and Polish.",
+      "Built a responsive personal portfolio website to showcase my technical skills, education, and software projects. The website is available in English and Polish.",
 
     project_source: "View on GitHub",
 
@@ -113,15 +103,15 @@ const translations = {
 
     focus_card_1_title: "Current Focus",
     focus_card_1_text:
-      "Improving my software development skills through practical projects, backend development, and programming fundamentals.",
+      "Developing my programming skills through practical projects, backend development, and continued study of software engineering fundamentals.",
 
     focus_card_2_title: "Languages",
     focus_card_2_text:
-      "Ukrainian — Native/Bilingual<br />Russian — Native/Bilingual<br />Polish — Proficient<br />English — Fluent",
+      "Ukrainian — Native<br>Russian — Native<br>Polish — Proficient<br>English — Proficient",
 
     focus_card_3_title: "International Experience",
     focus_card_3_text:
-      "Erasmus+ academic exchange at the University of Twente in the Netherlands, with courses taught in English.",
+      "Currently participating in the Erasmus+ exchange programme at the University of Twente in the Netherlands, where my courses are taught in English.",
 
     focus_card_4_title: "CV",
     focus_card_4_text:
@@ -134,7 +124,7 @@ const translations = {
     contact_kicker: "Contact",
     contact_title: "Let's Get in Touch",
     contact_text:
-      "I am open to software development internships, entry-level positions, and collaboration opportunities.",
+      "I am interested in software development internships, entry-level roles, and opportunities to collaborate.",
     contact_btn: "Email Me",
 
     label_email: "Email",
@@ -143,6 +133,9 @@ const translations = {
   },
 
   pl: {
+    menu_open: "Otwórz menu",
+    menu_close: "Zamknij menu",
+
     // NAWIGACJA
     nav_about: "O mnie",
     nav_education: "Edukacja",
@@ -154,25 +147,23 @@ const translations = {
 
     // SEKCJA GŁÓWNA
     hero_eyebrow:
-      "Studentka informatyki • Początkująca programistka",
+      "Studentka kierunku informatycznego • Początkująca programistka",
 
     hero_lead:
-      "Tworzę oprogramowanie i aplikacje internetowe, łącząc umiejętności programistyczne, rozwiązywanie problemów oraz wiedzę z zakresu grafiki komputerowej.",
+      "Tworzę oprogramowanie i aplikacje internetowe, łącząc umiejętności programistyczne i analityczne z wiedzą z zakresu grafiki komputerowej.",
 
     hero_text:
-      "Studiuję Systemy Informatyczne w Automatyce na Politechnice Wrocławskiej i posiadam dyplom licencjata z grafiki komputerowej. Moje doświadczenie akademickie obejmuje również semestr wymiany Erasmus+ na University of Twente w Holandii, gdzie zajęcia odbywają się w języku angielskim.",
+      "Studiuję Systemy Informatyczne w Automatyce na Politechnice Wrocławskiej i mam dyplom licencjata z grafiki komputerowej. Obecnie uczestniczę w wymianie Erasmus+ na University of Twente w Holandii, gdzie zajęcia prowadzone są w języku angielskim.",
 
     hero_btn_1: "Zobacz projekty",
 
     // KARTY GŁÓWNE
     card_based_label: "Lokalizacja",
     card_based_text: "Wrocław, Polska",
-
     card_areas_label: "Główne obszary",
     card_areas_text:
       "Python • C++ • Tworzenie stron internetowych • Bazy danych",
-
-    card_goal_label: "Obecny cel",
+    card_goal_label: "Cel zawodowy",
     card_goal_text:
       "Zdobycie praktycznego doświadczenia podczas stażu programistycznego lub na stanowisku juniorskim.",
 
@@ -181,19 +172,19 @@ const translations = {
     about_title: "Kilka słów o mnie",
 
     about_p1:
-      "Jestem studentką informatyki z wykształceniem w zakresie grafiki komputerowej. Interesuję się tworzeniem oprogramowania, programowaniem, technologiami internetowymi i bazami danych.",
+      "Studiuję na kierunku informatycznym i mam wykształcenie w zakresie grafiki komputerowej. Interesuję się tworzeniem oprogramowania, programowaniem, technologiami internetowymi oraz bazami danych.",
 
     about_p2:
-      "W ramach projektów akademickich i własnych zdobyłam doświadczenie w pracy z Pythonem, C++, JavaScriptem, SQL oraz technologiami backendowymi. Lubię tworzyć praktyczne aplikacje i rozumieć, jak współpracują ze sobą różne elementy systemu.",
+      "Dzięki zajęciom na uczelni i własnym projektom zdobyłam doświadczenie w pracy z Pythonem, C++, JavaScriptem, SQL oraz technologiami backendowymi. Lubię tworzyć użyteczne aplikacje i poznawać zasady współpracy poszczególnych elementów systemu.",
 
     about_p3:
-      "Szukam stażu lub stanowiska juniorskiego, na którym mogłabym uczestniczyć w rzeczywistych projektach programistycznych, uczyć się od doświadczonych programistów i dalej rozwijać swoje umiejętności techniczne.",
+      "Szukam stażu lub pracy na stanowisku juniorskim, gdzie mogłabym uczestniczyć w projektach programistycznych, uczyć się od doświadczonych programistów i rozwijać swoje umiejętności techniczne.",
 
     strengths_title: "Mocne strony",
     strength_1: "Rozwiązywanie problemów",
     strength_2: "Uporządkowane myślenie",
     strength_3: "Ciągłe doskonalenie umiejętności",
-    strength_4: "Łączenie umiejętności technicznych i wizualnych",
+    strength_4: "Łączenie umiejętności technicznych i projektowych",
 
     // EDUKACJA
     education_kicker: "Edukacja",
@@ -204,28 +195,24 @@ const translations = {
       "Studia I stopnia na kierunku Systemy Informatyczne w Automatyce (w trakcie)",
     edu1_place: "Politechnika Wrocławska",
     edu1_text:
-      "Studia obejmujące programowanie, systemy komputerowe, algorytmy i rozwiązywanie problemów technicznych.",
+      "Program studiów obejmuje programowanie, systemy komputerowe, algorytmy oraz rozwiązywanie problemów technicznych.",
 
     edu3_year: "09/2026 – 01/2027",
     edu3_title:
       "Semestr wymiany Erasmus+ (zajęcia w języku angielskim)",
-    edu3_place:
-      "University of Twente — Enschede, Holandia",
+    edu3_place: "University of Twente — Enschede, Holandia",
     edu3_text:
-      "Międzynarodowa wymiana akademicka obejmująca zajęcia prowadzone w języku angielskim.",
+      "Obecnie studiuję na University of Twente w ramach programu Erasmus+, uczestnicząc w zajęciach prowadzonych w języku angielskim.",
 
     edu2_year: "2022 – 2025",
-    edu2_title:
-      "Licencjat z grafiki komputerowej",
-    edu2_place:
-      "Uniwersytet WSB Merito we Wrocławiu",
+    edu2_title: "Licencjat z grafiki komputerowej",
+    edu2_place: "Uniwersytet WSB Merito we Wrocławiu",
     edu2_text:
-      "Wybrane przedmioty: programowanie obiektowe, algorytmy i struktury danych, bazy danych, tworzenie stron internetowych, administracja systemem Linux oraz grafika 2D i 3D.",
+      "Wybrane przedmioty: programowanie obiektowe, algorytmy i struktury danych, systemy baz danych, tworzenie stron internetowych, administracja systemem Linux oraz grafika komputerowa 2D i 3D.",
 
     // UMIEJĘTNOŚCI
     skills_kicker: "Umiejętności",
     skills_title: "Umiejętności techniczne",
-
     skill_block_1: "Języki programowania",
     skill_block_2: "Tworzenie stron internetowych",
     skill_block_3: "Bazy danych i backend",
@@ -239,12 +226,12 @@ const translations = {
 
     project1_type: "Tworzenie oprogramowania",
     project1_text:
-      "Stworzyłam platformę do monitorowania systemu, która zbiera dane o wykorzystaniu procesora, pamięci, dysku i sieci. Zbudowałam REST API oraz panel internetowy do monitorowania wydajności, wizualizacji danych historycznych i obsługi alertów. Wdrożyłam testy automatyczne oraz procesy CI.",
+      "Opracowałam platformę do monitorowania systemu, która zbiera dane dotyczące procesora, pamięci, dysku i sieci. Stworzyłam REST API oraz panel internetowy do monitorowania wydajności, wizualizacji danych historycznych i wyświetlania alertów. Dodałam testy automatyczne i procesy ciągłej integracji (CI).",
 
     project2_title: "Osobista strona portfolio",
     project2_type: "Tworzenie stron internetowych",
     project2_text:
-      "Stworzyłam responsywną stronę portfolio prezentującą umiejętności techniczne, wykształcenie i projekty programistyczne, z obsługą języka angielskiego i polskiego.",
+      "Stworzyłam responsywną stronę portfolio prezentującą moje umiejętności techniczne, wykształcenie i projekty programistyczne. Strona jest dostępna w języku angielskim i polskim.",
 
     project_source: "Zobacz na GitHubie",
 
@@ -254,15 +241,15 @@ const translations = {
 
     focus_card_1_title: "Obecny kierunek rozwoju",
     focus_card_1_text:
-      "Rozwijam swoje umiejętności programistyczne poprzez praktyczne projekty, pracę z technologiami backendowymi oraz doskonalenie podstaw programowania.",
+      "Rozwijam umiejętności programistyczne poprzez realizację praktycznych projektów, naukę technologii backendowych i pogłębianie wiedzy z podstaw inżynierii oprogramowania.",
 
     focus_card_2_title: "Języki",
     focus_card_2_text:
-      "Ukraiński — ojczysty<br />Rosyjski — ojczysty<br />Polski — zaawansowany<br />Angielski — biegły",
+      "Ukraiński — ojczysty<br>Rosyjski — ojczysty<br>Polski — zaawansowany<br>Angielski — zaawansowany",
 
     focus_card_3_title: "Doświadczenie międzynarodowe",
     focus_card_3_text:
-      "Wymiana akademicka Erasmus+ na University of Twente w Holandii, z zajęciami prowadzonymi w języku angielskim.",
+      "Obecnie uczestniczę w wymianie Erasmus+ na University of Twente w Holandii, gdzie zajęcia prowadzone są w języku angielskim.",
 
     focus_card_4_title: "CV",
     focus_card_4_text:
@@ -275,10 +262,10 @@ const translations = {
     contact_kicker: "Kontakt",
     contact_title: "Skontaktujmy się",
     contact_text:
-      "Jestem otwarta na staże programistyczne, stanowiska juniorskie oraz możliwości współpracy.",
+      "Interesują mnie staże programistyczne, stanowiska juniorskie oraz możliwości współpracy.",
     contact_btn: "Napisz do mnie",
 
-    label_email: "Email",
+    label_email: "E-mail",
     label_location: "Lokalizacja",
     location_text: "Wrocław, Polska"
   }
@@ -289,41 +276,51 @@ const langButtons = document.querySelectorAll(".lang-btn");
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
-// SET LANGUAGE
+function getCurrentLanguage() {
+  return document.documentElement.lang === "pl" ? "pl" : "en";
+}
+
+// LANGUAGE SWITCHING
 function setLanguage(lang) {
-  if (!translations[lang]) {
+  if (!Object.prototype.hasOwnProperty.call(translations, lang)) {
     lang = "en";
   }
 
   document.documentElement.lang = lang;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const key = element.getAttribute("data-i18n");
+    const key = element.dataset.i18n;
     const translation = translations[lang][key];
 
-    if (translation !== undefined) {
-      if (translation.includes("<br")) {
-        element.innerHTML = translation;
-      } else {
-        element.textContent = translation;
-      }
+    if (translation === undefined) {
+      return;
+    }
+
+    if (key === "focus_card_2_text") {
+      element.innerHTML = translation;
+    } else {
+      element.textContent = translation;
     }
   });
 
   langButtons.forEach((button) => {
     const isActive = button.dataset.lang === lang;
-
     button.classList.toggle("active", isActive);
-    button.setAttribute(
-      "aria-pressed",
-      String(isActive)
-    );
+    button.setAttribute("aria-pressed", String(isActive));
   });
+
+  if (menuToggle) {
+    const isOpen = navLinks?.classList.contains("show") ?? false;
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? translations[lang].menu_close : translations[lang].menu_open
+    );
+  }
 
   try {
     localStorage.setItem("portfolioLanguage", lang);
   } catch (error) {
-    // The website still works if storage is unavailable.
+    // The website still works if local storage is unavailable.
   }
 }
 
@@ -334,19 +331,18 @@ function initLanguage() {
   try {
     savedLanguage = localStorage.getItem("portfolioLanguage");
   } catch (error) {
-    // Ignore storage restrictions.
+    // Ignore local storage restrictions.
   }
 
-  if (savedLanguage && translations[savedLanguage]) {
+  if (savedLanguage && Object.prototype.hasOwnProperty.call(translations, savedLanguage)) {
     setLanguage(savedLanguage);
-  } else {
-    const browserLanguage =
-      navigator.language.toLowerCase().startsWith("pl")
-        ? "pl"
-        : "en";
-
-    setLanguage(browserLanguage);
+    return;
   }
+
+  const browserLanguage =
+    navigator.language.toLowerCase().startsWith("pl") ? "pl" : "en";
+
+  setLanguage(browserLanguage);
 }
 
 // MOBILE MENU
@@ -357,29 +353,22 @@ function initMenu() {
 
   function closeMenu() {
     navLinks.classList.remove("show");
-
-    menuToggle.setAttribute(
-      "aria-expanded",
-      "false"
-    );
-
+    menuToggle.setAttribute("aria-expanded", "false");
     menuToggle.setAttribute(
       "aria-label",
-      "Open menu"
+      translations[getCurrentLanguage()].menu_open
     );
   }
 
   menuToggle.addEventListener("click", () => {
     const isOpen = navLinks.classList.toggle("show");
 
-    menuToggle.setAttribute(
-      "aria-expanded",
-      String(isOpen)
-    );
-
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
     menuToggle.setAttribute(
       "aria-label",
-      isOpen ? "Close menu" : "Open menu"
+      isOpen
+        ? translations[getCurrentLanguage()].menu_close
+        : translations[getCurrentLanguage()].menu_open
     );
   });
 
@@ -417,10 +406,7 @@ function initWebsite() {
 }
 
 if (document.readyState === "loading") {
-  document.addEventListener(
-    "DOMContentLoaded",
-    initWebsite
-  );
+  document.addEventListener("DOMContentLoaded", initWebsite);
 } else {
   initWebsite();
 }
